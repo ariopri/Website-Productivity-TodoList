@@ -1,0 +1,47 @@
+.button-primary {
+    width: 97px;
+    height: 40px;
+    background-color: transparent,;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: transparent,;
+    text-align: center;
+}
+
+.button-primary:hover, .button-primary:focus {
+    color: #fff;
+    outline: 0;
+  }
+  .third {
+    border-color: #2563EB;
+    border-radius: 0;
+    color: #2563EB;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+  }
+  .third:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #2563EB;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+  }
+  .third:hover {
+    color: #fff;
+  }
+  .third:hover:after {
+    width: 110%;
+  }
