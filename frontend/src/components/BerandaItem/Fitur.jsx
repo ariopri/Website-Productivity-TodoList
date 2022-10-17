@@ -8,7 +8,7 @@ import Sigambar4 from "./Assets/img/calendar.svg";
 
 const Fitur = () => {
     const feature = {
-        paddingTop: "100px",
+        paddingTop: "50px",
     };
     const fitur = {
         paddingTop: "50px",
