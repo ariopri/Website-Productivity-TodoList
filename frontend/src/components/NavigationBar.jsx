@@ -35,7 +35,7 @@ const NavigationBar = () => {
         fixed="top"
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <div className="text-light-100 ">
               <b>Gabungin</b>
             </div>
@@ -49,7 +49,7 @@ const NavigationBar = () => {
                 </a>
               </div>
               <div>
-                <a className="nav-link text-light" href="/todolist">
+                <a className="nav-link text-light" href="/fitur">
                   <b> Features </b>
                 </a>
               </div>
