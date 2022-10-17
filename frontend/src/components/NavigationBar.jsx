@@ -54,7 +54,7 @@ const NavigationBar = () => {
                 </a>
               </div>
               <div>
-                <a className="nav-link text-light" href="/faq">
+                <a className="nav-link text-light" href="/testimoni">
                   <b> Customers </b>
                 </a>
               </div>
