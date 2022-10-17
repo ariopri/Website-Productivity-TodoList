@@ -1,9 +1,12 @@
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import Footer from "./Footer";
+import NavigationBar from "./NavigationBar";
 
 const Testimoni = () => {
     return (
         <>
+        <NavigationBar />
             <div className="bg-light">
                 <Container>
                     <div class="row text-center ">
@@ -89,6 +92,7 @@ const Testimoni = () => {
                     </div>
                 </Container>
             </div>
+            <Footer />
         </>
     );
 };
