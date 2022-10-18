@@ -1,12 +1,18 @@
 import React from 'react';
 import { emailValidator, passwordValidator } from '../Validator/RegexValidator';
-import {useNavigate} from "react-router-dom"
+import {Navigate, useNavigate} from "react-router-dom"
+import Axios from 'axios';
 
 const Login = () => {
 	const history = useNavigate()
 
 	const [input, setInput] = React.useState({ email: '', password: '' });
-
+	const userLogin = async () => {
+		const user = {
+			email: input.email,
+			password: input.password,
+		};
+	};
 	const [errorMessage, seterrorMessage] = React.useState('');
 	const [successMessage, setsuccessMessage] = React.useState('');
 
@@ -29,10 +35,15 @@ const Login = () => {
 			);
 		// setsuccessMessage('Successfully Validated');
 		if(input.email !== 'admin@a.com' || input.password !== 'Password@1') return seterrorMessage('Invalid email or password');
-
-		history.push('/')
-		localStorage.setItem('auth', true)
-
+		try{
+			Axios.post('http://localhost:3000/login', {email: input.email, password: input.password})
+			.then(res => {
+				localStorage.setItem('auth', res.data.token)
+				history('/')
+			})
+		}catch(err){
+			console.log(err)
+		};
 	};
 
 	return (
