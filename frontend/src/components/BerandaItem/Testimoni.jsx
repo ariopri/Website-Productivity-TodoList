@@ -16,7 +16,7 @@ const Testimoni = () => {
                                 class="carousel slide carousel-dark mt-4 "
                                 data-mdb-ride="carousel"
                             >
-                                <h2 class="pt-4">Kepercayaan Pelanggan</h2>
+                                <h2 class="pt-5">Kepercayaan Pelanggan</h2>
                                 <Carousel>
                                     <Carousel.Item interval={1000}>
                                         <div class="mt-5 mb-5">

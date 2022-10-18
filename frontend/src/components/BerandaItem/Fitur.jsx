@@ -6,7 +6,6 @@ import Sigambar2 from "./Assets/img/list-task.svg";
 import Sigambar3 from "./Assets/img/note.svg";
 import Sigambar4 from "./Assets/img/calendar.svg";
 import NavigationBar from "./NavigationBar";
-import Footer from "./Footer";
 
 const Fitur = () => {
     const feature = {
@@ -146,7 +145,6 @@ const Fitur = () => {
                     </div>
                 </div>
             </section>
-            <Fitur />
         </>
     );
 };
