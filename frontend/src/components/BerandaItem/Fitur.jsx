@@ -146,7 +146,7 @@ const Fitur = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
+            <Fitur />
         </>
     );
 };

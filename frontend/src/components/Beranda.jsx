@@ -11,7 +11,7 @@ const Beranda = () => {
             <SlideShow />
             <Fitur />
             <Testimoni />
-            <Footer />
+
         </>
     );
 };
